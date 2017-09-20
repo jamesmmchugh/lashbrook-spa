@@ -1,43 +1,8 @@
-<div style="width: 100%;">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" routerLink="/welcome">Lashbrook</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-            (click)="navbarCollapsed = !navbarCollapsed">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/news">News<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <div ngbDropdown class="d-inline-block">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" ngbDropdownToggle>For Sale</a>
-            <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" routerLink="/store/animals">Animals</a>
-              <a class="dropdown-item" routerLink="/store/produce">Produce</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
-<div class="jumbotron jumbotron-fluid" id="lashbrookHeader">
-  <div class="container">
-    <img src="/assets/lashbrookLogo256.png" alt="Lashbrook" class="mx-auto d-block z-depth-5"/>
-  </div>
-</div>
-<div class="container">
-  <!-- Routed views go here -->
-  <router-outlet></router-outlet>
-</div>
-
+<navbar></navbar>
+<header></header>
+<section class="container py-4">
+    <!-- Routed views go here -->
+    <router-outlet></router-outlet>
+</section>
+<sticky-footer></sticky-footer>
 

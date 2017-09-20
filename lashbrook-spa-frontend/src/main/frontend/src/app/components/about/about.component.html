@@ -1,5 +1,36 @@
 <div class="container">
-  About
+  <div class="jumbotron">
+    <h1 class="display-4">About Lashbrook</h1>
+    <p>Lashbrook farm was established in...</p>
+  </div>
+  <div class="jumbotron">
+    <h1 class="display-4">Gallery</h1>
+    <p class="lead">Here's a selection of our favourite photos from around the farm.</p>
+    <hr class="my-4">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <img src="/assets/gallery/20160717_205656_HDR.jpg" alt="Random first slide" class="d-block img-fluid">
+        <div class="carousel-caption">
+          <h3>10 seconds between slides...</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="/assets/gallery/20160826_192038.jpg"  alt="Random second slide" class="d-block img-fluid">
+        <div class="carousel-caption">
+          <h3>No keyboard...</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="/assets/gallery/20160830_083135_HDR.jpg" alt="Random third slide" class="d-block img-fluid">
+        <div class="carousel-caption">
+          <h3>And no wrap after last slide.</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
 </div>
 
 

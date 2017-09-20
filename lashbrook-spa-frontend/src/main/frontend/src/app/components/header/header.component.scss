@@ -1,0 +1,14 @@
+.lashbrook-header-bg {
+  background: url('/assets/header1080.jpg') no-repeat center center;
+  background-position: 50% calc(50% + 56px);
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+
+.lashbrook-header {
+  height: 278px;
+}
